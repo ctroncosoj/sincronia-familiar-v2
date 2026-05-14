@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "cl.sendaraiz.sincronia",
+      "sha256_cert_fingerprints": [
+        "38:13:EE:2A:D6:1F:6F:E5:19:9D:DE:3C:F8:51:1C:36:75:F2:02:82:AC:0C:E8:62:AC:B9:D6:6D:72:01:B0:9C",
+        "AE:12:A6:B8:D2:FF:03:4F:1E:3E:10:1B:49:8C:11:FD:D1:A6:11:36:A6:93:ED:38:2C:C4:5E:8A:F4:07:3E:C5"
+      ]
+    }
+  }
+]
