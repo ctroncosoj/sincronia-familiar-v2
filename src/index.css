@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Edge-to-Edge & Safe Area (Android 15 / iOS) ────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+  /* Four-sided safe area insets — edge-to-edge on Android 15 + iOS */
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overscroll-behavior-y: contain;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  /* dvh unit respects system bar changes on resize/orientation — better than vh for TWA */
+  min-height: 100dvh;
+}
+
+/* ─── Scrollbar suppression ───────────────────────────────────────────────── */
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Touch & Interaction ─────────────────────────────────────────────────── */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Apple HIG / Material minimum touch target 44×44 */
+button, a, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+
+button, a {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+button, .select-none {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Prevent double-tap zoom */
+button {
+  touch-action: manipulation;
+}
+
+/* ─── Form element resets ─────────────────────────────────────────────────── */
+
+input, textarea, select {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* ─── Utility classes ─────────────────────────────────────────────────────── */
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Explicit safe-area padding utilities */
+.pt-safe { padding-top: env(safe-area-inset-top); }
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.pl-safe { padding-left: env(safe-area-inset-left); }
+.pr-safe { padding-right: env(safe-area-inset-right); }
+
+/* ─── Large screen / foldable / tablet support ───────────────────────────── */
+
+@media (min-width: 768px) {
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+}

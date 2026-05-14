@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#4A5D23"/>
+  <!-- Outer ring -->
+  <circle cx="256" cy="220" r="110" fill="none" stroke="#D4A050" stroke-width="12" opacity="0.6"/>
+  <!-- Sun symbol -->
+  <circle cx="256" cy="220" r="52" fill="#F5C870"/>
+  <!-- Solar rays -->
+  <g stroke="#F5C870" stroke-width="10" stroke-linecap="round" opacity="0.85">
+    <line x1="256" y1="88" x2="256" y2="112"/>
+    <line x1="256" y1="328" x2="256" y2="352"/>
+    <line x1="124" y1="220" x2="148" y2="220"/>
+    <line x1="364" y1="220" x2="388" y2="220"/>
+    <line x1="163" y1="127" x2="180" y2="144"/>
+    <line x1="332" y1="296" x2="349" y2="313"/>
+    <line x1="349" y1="127" x2="332" y2="144"/>
+    <line x1="180" y1="296" x2="163" y2="313"/>
+  </g>
+  <!-- Root / trunk line -->
+  <line x1="256" y1="272" x2="256" y2="390" stroke="#D4A050" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <!-- Root branches -->
+  <path d="M256 340 Q210 360 190 390" stroke="#D4A050" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <path d="M256 360 Q302 376 318 400" stroke="#D4A050" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <path d="M256 380 Q230 388 218 408" stroke="#D4A050" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.55"/>
+</svg>

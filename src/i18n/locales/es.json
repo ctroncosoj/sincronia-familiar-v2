@@ -1,0 +1,452 @@
+{
+  "app": {
+    "tagline": "Sincronía Familiar",
+    "title": "Senda Raíz",
+    "footer": {
+      "reference": "Concepción · referencia",
+      "caldean": "Orden Caldeo · DST-libre",
+      "north": "N",
+      "south": "S",
+      "east": "E",
+      "west": "O"
+    }
+  },
+  "header": {
+    "civilTime": "Hora civil",
+    "solarTime": "Hora Solar",
+    "emergencyButton": "Emergencia",
+    "emergencyButtonTitle": "Emergencia: Volver al Centro"
+  },
+  "days": ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+  "months": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+  "location": {
+    "loading": "Buscando el sol en tu horizonte...",
+    "reload": "Recarga la página y permite el acceso a tu ubicación cuando el navegador lo solicite."
+  },
+  "currentGraha": {
+    "calculating": "Calculando hora planetaria...",
+    "hourLabel": "Hora {{index}} · {{period}}",
+    "day": "Día",
+    "night": "Noche",
+    "until": "hasta {{time}}",
+    "nextChange": "próximo cambio",
+    "whatToDo": "Qué hacer",
+    "avoid": "Mejor evitar",
+    "comingUp": "A continuación — {{time}}"
+  },
+  "rahuKaal": {
+    "active": "Rahu Kaal activo",
+    "activeDesc": "La percepción se nubla. No es el momento para conversaciones difíciles, decisiones importantes ni nuevos comienzos.",
+    "endsAt": "Termina a las {{time}}",
+    "minutesLeft": "· {{minutes}} min restantes",
+    "suggestion": "Sugerencia: solo \"estar\". Tareas de mantenimiento, presencia suave, ninguna decisión nueva.",
+    "today": "Rahu Kaal hoy",
+    "avoidDecisions": "Evita decisiones importantes en esta ventana"
+  },
+  "horaTimeline": {
+    "title": "Tabla de horas",
+    "day": "Día",
+    "night": "Noche",
+    "now": "ahora"
+  },
+  "familyProfile": {
+    "title": "Perfil Familiar",
+    "childCount_one": "{{count}} niño",
+    "childCount_other": "{{count}} niños",
+    "yourChildren": "Tus hijos",
+    "selectHint": "Selecciona un niño para ver su consejo personalizado según Dosha y hora planetaria.",
+    "noDosha": "Sin dosha asignado",
+    "prakritiOf": "Prakriti de {{name}}",
+    "rename": "Renombrar",
+    "remove": "Eliminar",
+    "addPlaceholder": "Nombre del niño o niña...",
+    "add": "Agregar",
+    "footerNote": "El niño seleccionado aparece resaltado. Su consejo Dosha se actualiza automáticamente con cada hora planetaria.",
+    "doshaDescriptions": {
+      "Vata": "Aire · movimiento",
+      "Pitta": "Fuego · intensidad",
+      "Kapha": "Tierra · calma"
+    }
+  },
+  "doshaConstitution": {
+    "title": "Constitución Infantil",
+    "badge": "Vata · Pitta · Kapha",
+    "sectionTitle": "Doshas Ayurvédicos",
+    "intro": "Cada niño nace con una constitución única. Explora el perfil que corresponde a tu hijo para recibir guías de nutrición y regulación emocional adaptadas. Todos los alimentos listados están disponibles en Chile durante todo el año.",
+    "childProfile": "Perfil del Niño",
+    "nourishingFoods": "Alimentos que Nutren",
+    "moderateFoods": "Alimentos a Moderar",
+    "moderateLabel": "A Moderar",
+    "thermometerTitle": "Termómetro Emocional",
+    "balanced": "En Equilibrio",
+    "alert": "Señales de Alerta",
+    "emergencyBtn": "Botón de Emergencia: Volver al Centro",
+    "regulationActivity": "Actividad de Regulación",
+    "rescueFood": "Alimento de Rescate",
+    "searchTitle": "Buscar Alimento",
+    "searchPlaceholder": "Ej: avena, pepino, manzana...",
+    "notFound": "No encontrado — prueba con otro nombre",
+    "tagNourishing": "Nutre",
+    "tagModerate": "Moderar",
+    "disclaimer": "Estas guías son orientativas y se basan en principios ayurvédicos tradicionales. Ante dudas de salud, consulta con un profesional."
+  },
+  "doshaGrahaBanner": {
+    "title": "Consejo según Dosha",
+    "tones": {
+      "calm": "Calma",
+      "alert": "Atención",
+      "energize": "Activar",
+      "connect": "Conectar"
+    }
+  },
+  "grahasPanel": {
+    "title": "Guía de los 7 Grahas",
+    "whatToDo": "Qué hacer",
+    "avoid": "Mejor evitar"
+  },
+  "sostenModal": {
+    "kitTitle": "Kit de Rescate Inmediato",
+    "heading": "Emergencia: Volver al Centro",
+    "forChild": "Para {{name}}",
+    "doshaLabel": "Dosha {{dosha}}",
+    "pauseTagline": "Pausa. Respira. Vuelve.",
+    "horaLabel": "Hora de {{name}} · {{focus}}",
+    "point1Title": "Acción Sensorial",
+    "point2Title": "Alimento de Rescate",
+    "point3Title": "Nota de Consciencia",
+    "caregiverTitle": "Para ti, cuidador/a",
+    "caregiverPause": "El caos es solo ruido. Cierra los ojos, lleva una mano al pecho y da tres respiraciones lentas. Tu estabilidad emocional es el ancla de toda la familia. No tienes que tener el control — solo tienes que estar presente.",
+    "exploreLink": "Explorar Recursos en Senda Raíz",
+    "backButton": "Volver a la brújula",
+    "rescue": {
+      "Vata": {
+        "sensory": "Envuelve a tu hijo/a en una manta tibia o dale un abrazo largo y sin prisa. El tacto profundo y el peso calman el sistema nervioso de Vata al instante.",
+        "food": "Ofrece algo tibio y suave: una pera o manzana cocida con canela, o un vaso de leche tibia con una pizca de cardamomo. Evita el frío y lo crujiente.",
+        "caregiverNote": "El caos que ves es solo viento. Vata necesita tierra, y esa tierra eres tú. Tu calma no tiene que ser perfecta — solo tiene que ser real."
+      },
+      "Pitta": {
+        "sensory": "Lleva a tu hijo/a a un espacio fresco y silencioso, lejos del sol directo. Agua fresca en las muñecas o la frente baja el fuego rápidamente.",
+        "food": "Ofrece algo fresco y dulce: rodajas de pera o manzana fría, uva, o agua con pepino. Evita lo picante, lo agrio y las bebidas calientes.",
+        "caregiverNote": "Su intensidad no es un defecto — es fuego sin cauce. No te enfrentes: sé el río que lo dirige. Respira antes de responder. Tu ecuanimidad es el remedio."
+      },
+      "Kapha": {
+        "sensory": "Invítalo/a a moverse: un pequeño baile, saltar en el lugar o salir a dar una vuelta corta. El movimiento es la medicina sensorial de Kapha.",
+        "food": "Ofrece algo liviano y estimulante: manzana fresca con jengibre rallado, o una infusión de hierbas tibia con miel. Evita lo pesado, cremoso o dulce en exceso.",
+        "caregiverNote": "La resistencia que sientes no es terquedad — es la tierra buscando ser movida con amor. No empujes: acompaña. Tu entusiasmo genuino es el detonador."
+      },
+      "generic": {
+        "sensory": "Ofrece un abrazo tranquilo, silencio y contacto físico suave. El cuerpo siempre sabe antes que la mente.",
+        "food": "Fruta fresca de temporada como pera o manzana, o algo tibio y reconfortante. Lo simple siempre alcanza.",
+        "caregiverNote": "El caos es solo ruido. Pausa, respira y recuerda: no tienes que resolverlo todo ahora mismo. Tu presencia es suficiente."
+      }
+    }
+  },
+  "grahas": {
+    "sun": {
+      "name": "Surya",
+      "planetName": "Sol",
+      "parentFocus": "Liderazgo y presencia consciente",
+      "withChildren": "Invítalos a juegos donde {children} dirijan. Deja que tomen decisiones pequeñas y siéntete orgulloso de acompañarlos.",
+      "avoid": "Disputas de ego o querer ser \"un igual\" con ellos. Tu autoridad amorosa es un regalo, no una carga.",
+      "poeticMessage": "El sol no pide permiso para brillar. Hoy, tú tampoco. Lidera con ternura.",
+      "keywords": ["autoridad", "vitalidad", "decisión"],
+      "selfCare": "Tu energía hoy tiene brillo propio. Antes de liderar a otros, date un momento de silencio y reconoce lo que ya has logrado. No tienes que demostrar nada.",
+      "pauseMessage": "Tu luz es suficiente sin esfuerzo. Cierra los ojos, lleva una mano al pecho y di en silencio: \"Soy suficiente tal como soy.\" Luego sigue."
+    },
+    "moon": {
+      "name": "Chandra",
+      "planetName": "Luna",
+      "parentFocus": "Empatía, nutrición emocional, escucha profunda",
+      "withChildren": "Es el momento del baño, los mimos y la comida reconfortante. El cuerpo y el alma de {children} necesitan tu calma ahora.",
+      "avoid": "Disciplina rígida o explicaciones muy lógicas. Sus corazones no quieren razonar; quieren ser abrazados.",
+      "poeticMessage": "La luna no empuja las mareas; simplemente es, y el mar responde. Hoy tú también puedes solo ser.",
+      "keywords": ["emoción", "ternura", "hogar"],
+      "selfCare": "Permítete ser vulnerable. Busca un rincón tranquilo, una manta o el contacto suave de algo vivo. Nutre tu propio corazón antes de nutrir el de los demás.",
+      "pauseMessage": "Busca refugio. Un té tibio, una manta o el abrazo de tus hijos es tu medicina ahora. Antes de continuar, permítete recibir."
+    },
+    "mars": {
+      "name": "Mangala",
+      "planetName": "Marte",
+      "parentFocus": "Tareas rápidas, movimiento y energía activa",
+      "withChildren": "Deporte, competencia sana, quemar energía física. Es hora de moverse con {children}, no de sentarse.",
+      "avoid": "Discusiones o pedirles que se queden quietos. La impulsividad es alta; mejor encauzarla que resistirla.",
+      "poeticMessage": "Esta energía no es tuya en contra; es tuya a favor. Muévete, y todo lo que parecía atasco se despejará.",
+      "keywords": ["acción", "impulso", "energía"],
+      "selfCare": "Tu fuego está alto. No es un defecto, es exceso de energía buscando salida. Antes de reaccionar, bebe un vaso de agua fresca y da tres respiraciones largas. El impulso pasará.",
+      "pauseMessage": "Hay mucha intensidad ahora. Sal a caminar o mójate la cara con agua fría. No tomes decisiones desde el impulso — espera unos minutos y vuelve."
+    },
+    "mercury": {
+      "name": "Budha",
+      "planetName": "Mercurio",
+      "parentFocus": "Comunicación, organización y claridad mental",
+      "withChildren": "Tareas escolares, juegos de ingenio con {children}, explica las reglas del día con paciencia. Su mente está abierta ahora.",
+      "avoid": "Silencio absoluto o tareas que pidan mucha intuición emocional. Hoy las palabras son el puente.",
+      "poeticMessage": "Habla despacio para que te escuchen rápido. Las palabras correctas hoy construyen confianza para mañana.",
+      "keywords": ["comunicación", "ingenio", "claridad"],
+      "selfCare": "Tu mente hoy procesa mucho. Escribe en papel una sola cosa que te preocupe y cierra el cuaderno. Externalizar el ruido mental libera espacio para la presencia.",
+      "pauseMessage": "Demasiada información a la vez. Haz una pausa de pantallas durante 5 minutos. Observa algo con textura, algo real. Tu sistema nervioso lo agradecerá."
+    },
+    "jupiter": {
+      "name": "Guru",
+      "planetName": "Júpiter",
+      "parentFocus": "Planificación profunda, sabiduría y gratitud",
+      "withChildren": "Cuentos con valores, momentos de agradecimiento en familia con {children}. Comparte algo que aprendiste hoy.",
+      "avoid": "Trivialidades o perderte en redes sociales. Este tiempo es demasiado fértil para desperdiciarlo.",
+      "poeticMessage": "Eres el mayor de los maestros que tus hijos conocerán. Hoy, enseña con el ejemplo silencioso.",
+      "keywords": ["sabiduría", "abundancia", "propósito"],
+      "selfCare": "Hoy hay una sabiduría mayor que te sostiene. No necesitas tener todas las respuestas. Confía en que lo que necesitas saber llegará. Descansa en esa confianza.",
+      "pauseMessage": "Respira profundo tres veces. Con cada exhalo, suelta una preocupación. No tienes que cargar con todo. Hay una fuerza más grande que te acompaña."
+    },
+    "venus": {
+      "name": "Shukra",
+      "planetName": "Venus",
+      "parentFocus": "Creatividad, belleza y autocuidado",
+      "withChildren": "Arte, música, manualidades o cocinar algo rico junto a {children}. La belleza que creas hoy los nutrirá por años.",
+      "avoid": "Críticas estéticas o ambientes desordenados. La armonía visual alimenta la armonía interior.",
+      "poeticMessage": "Mereces belleza tanto como la buscas. Date un té, un momento, una respiración larga.",
+      "keywords": ["belleza", "armonía", "amor"],
+      "selfCare": "Mereces recibir tanto como das. Hoy, haz algo solo para ti: una música que ames, una crema con olor que te guste, un momento de silencio sin dar nada a nadie.",
+      "pauseMessage": "Tu cuerpo pide armonía. Pon una canción que te calme, o simplemente siéntate en silencio un minuto. La belleza interior no necesita ser ganada — ya está en ti."
+    },
+    "saturn": {
+      "name": "Shani",
+      "planetName": "Saturno",
+      "parentFocus": "Orden, estructura y límites amorosos",
+      "withChildren": "Establece límites claros y estructura para {children}. Guardar juguetes, seguir la rutina de sueño, disciplina suave y consistente.",
+      "avoid": "Impaciencia. Todo va más lento en esta hora. No es un problema; es la invitación a soltar el apuro.",
+      "poeticMessage": "La raíz más profunda es la que aguanta el viento más fuerte. Hoy construyes cimientos, no prisas.",
+      "keywords": ["estructura", "disciplina", "paciencia"],
+      "selfCare": "El caos de hoy es solo ruido. No tienes que resolverlo todo ahora. Elige una sola cosa pequeña y deja el resto para mañana. Eres suficiente exactamente como estás.",
+      "pauseMessage": "No intentes resolverlo todo ahora. El tiempo hoy es lento a propósito. Solo respira y pon orden en una sola cosa pequeña. El resto puede esperar."
+    }
+  },
+  "doshas": {
+    "Vata": {
+      "element": "Aire · Éter",
+      "tagline": "Movimiento · Creatividad · Sensibilidad",
+      "profile": "Niño creativo, imaginativo y en constante movimiento. Aprende rápido pero se distrae con facilidad. Muy sensible a cambios de rutina, temperatura y estímulos sensoriales. Necesita anclas de seguridad: horarios estables, calor y contacto físico.",
+      "nourishingFoods": [
+        { "name": "Avena cocida", "note": "tibio y cremoso" },
+        { "name": "Arroz integral", "note": "disponible todo el año" },
+        { "name": "Zanahoria cocida" },
+        { "name": "Zapallo o calabaza" },
+        { "name": "Palta / aguacate" },
+        { "name": "Aceite de oliva" },
+        { "name": "Leche de vaca tibia", "note": "o vegetal calentada" },
+        { "name": "Dátiles" },
+        { "name": "Almendras remojadas" },
+        { "name": "Jengibre fresco", "note": "en infusión suave" }
+      ],
+      "moderateFoods": [
+        { "name": "Ensaladas crudas frías", "note": "mejor tibias" },
+        { "name": "Legumbres secas", "note": "cocinarlas muy bien" },
+        { "name": "Pan integral seco" },
+        { "name": "Frutas muy ácidas" },
+        { "name": "Alimentos con gas", "note": "repollo, brócoli crudo" }
+      ],
+      "balanced": {
+        "signs": [
+          "Juega con imaginación y fluidez",
+          "Duerme con relativa facilidad",
+          "Habla animado pero puede escuchar",
+          "Come sin demasiada selectividad"
+        ]
+      },
+      "dysregulated": {
+        "signs": [
+          "Ansiedad, miedos nocturnos",
+          "No puede parar quieto ni concentrarse",
+          "Come muy poco o olvida comer",
+          "Llora fácilmente sin causa aparente",
+          "Manos y pies fríos, piel seca"
+        ]
+      },
+      "emergency": {
+        "activity": "Envolverlo en una manta suave (abrazo de oruga) y hacer 5 respiraciones lentas juntos",
+        "food": "Una cucharada de avena cocida tibia con una gota de aceite de oliva y canela"
+      }
+    },
+    "Pitta": {
+      "element": "Fuego · Agua",
+      "tagline": "Intensidad · Liderazgo · Determinación",
+      "profile": "Niño determinado, líder natural y muy inteligente. Aprende con rapidez y tiene alta exigencia consigo mismo. Puede volverse irritable, competitivo o perfeccionista bajo presión. Necesita límites claros, tiempo al aire libre y actividades que canalicen su energía sin competencia excesiva.",
+      "nourishingFoods": [
+        { "name": "Arroz blanco o basmati", "note": "ligero y fresco" },
+        { "name": "Pepino", "note": "disponible todo el año en Chile" },
+        { "name": "Lechuga", "note": "fresca, no procesada" },
+        { "name": "Pera", "note": "fresca o cocida" },
+        { "name": "Coco rallado o agua de coco" },
+        { "name": "Leche entera fría", "note": "o leche de coco" },
+        { "name": "Menta fresca", "note": "en infusión fría" },
+        { "name": "Zapallo italiano (zucchini)" },
+        { "name": "Brócoli cocido al vapor" },
+        { "name": "Manzana verde" }
+      ],
+      "moderateFoods": [
+        { "name": "Tomate", "note": "muy ácido, moderar" },
+        { "name": "Ají y picante en cualquier forma" },
+        { "name": "Cítricos ácidos", "note": "limón, naranja agria" },
+        { "name": "Chocolate oscuro" },
+        { "name": "Carnes rojas grasosas" }
+      ],
+      "balanced": {
+        "signs": [
+          "Propone juegos y acepta el \"no\"",
+          "Concentración clara y persistente",
+          "Come bien y con apetito regulado",
+          "Expresa frustración con palabras"
+        ]
+      },
+      "dysregulated": {
+        "signs": [
+          "Rabietas intensas y explosivas",
+          "Muy crítico con sí mismo o con otros",
+          "Sensación de calor, sudar mucho",
+          "Come en exceso o rechaza con firmeza",
+          "No acepta perder ni equivocarse"
+        ]
+      },
+      "emergency": {
+        "activity": "Llevar al exterior (jardín, ventana) para sentir aire fresco; jugar a \"contar nubes\" durante 2 minutos",
+        "food": "Rodajas de pepino frío o un vaso de agua con hojas de menta"
+      }
+    },
+    "Kapha": {
+      "element": "Tierra · Agua",
+      "tagline": "Calma · Constancia · Afecto",
+      "profile": "Niño amoroso, tranquilo y muy constante. Aprende de forma pausada pero retiene muy bien. Muy apegado a sus seres queridos y a sus rutinas. Puede volverse apático, reticente al movimiento o acumular emociones sin expresarlas. Necesita movimiento regular, variedad y motivación cálida para activarse.",
+      "nourishingFoods": [
+        { "name": "Miel de abeja", "note": "cruda, no calentada" },
+        { "name": "Jengibre fresco", "note": "en infusión" },
+        { "name": "Manzana roja", "note": "disponible todo el año" },
+        { "name": "Lentejas rojas", "note": "ligeras y bien condimentadas" },
+        { "name": "Espinaca", "note": "al vapor" },
+        { "name": "Quinoa", "note": "grano andino, liviano" },
+        { "name": "Arvejas o guisantes" },
+        { "name": "Kiwi", "note": "disponible en Chile casi todo el año" },
+        { "name": "Pimentón / morrón" },
+        { "name": "Cebolla cocida", "note": "suaviza la mucosidad" }
+      ],
+      "moderateFoods": [
+        { "name": "Lácteos en exceso", "note": "queso, yogur espeso" },
+        { "name": "Pan blanco en cantidad" },
+        { "name": "Azúcar refinada" },
+        { "name": "Frituras y aceites en exceso" },
+        { "name": "Frutas muy dulces y pesadas", "note": "plátano, mango" }
+      ],
+      "balanced": {
+        "signs": [
+          "Juega tranquilo y con dedicación",
+          "Comparte sin rivalidad",
+          "Come bien y a buen ritmo",
+          "Expresa afecto con naturalidad"
+        ]
+      },
+      "dysregulated": {
+        "signs": [
+          "Letargo, no quiere moverse ni jugar",
+          "Se aferra o llora al separarse",
+          "Come en exceso por consuelo emocional",
+          "Acumula emociones sin expresarlas",
+          "Congestión frecuente, mucosidad"
+        ]
+      },
+      "emergency": {
+        "activity": "Saltar en el lugar 20 veces o bailar 1 minuto con música animada para encender su fuego interno",
+        "food": "Una rodaja de manzana con una pizca de canela y jengibre rallado"
+      }
+    }
+  },
+  "doshaGrahaRules": {
+    "Vata": {
+      "sun": {
+        "message": "Fluye con Surya a través de actividades creativas con inicio y fin claro. El brillo del Sol ancla su dispersión natural.",
+        "keyword": "Enraizar el brillo"
+      },
+      "moon": {
+        "message": "Aprovecha este momento para masajes con aceite tibio o un baño reconfortante. El agua de Chandra equilibra su sequedad.",
+        "keyword": "Contención amorosa"
+      },
+      "mars": {
+        "message": "Brinda soporte mediante yoga infantil o circuitos de equilibrio. Evita movimientos bruscos; Mangala necesita acción coordinada.",
+        "keyword": "Acción coordinada"
+      },
+      "mercury": {
+        "message": "Fluye con Budha a través de juegos de palabras lentos o lectura compartida. Mercurio puede sobreestimularlos; filtra los estímulos.",
+        "keyword": "Filtro de estímulos"
+      },
+      "jupiter": {
+        "message": "Aprovecha este momento para contar historias del cosmos o de los abuelos. Guru da sentido y guía a su curiosidad expansiva.",
+        "keyword": "Expansión con guía"
+      },
+      "venus": {
+        "message": "Brinda soporte mediante música suave, aromas ricos y texturas agradables. La armonía sensorial de Shukra calma su sistema nervioso.",
+        "keyword": "Armonía sensorial"
+      },
+      "saturn": {
+        "message": "Fluye con Shani a través de silencio, mantas con peso y rutina predecible. Saturno les da la estructura que tanto necesitan.",
+        "keyword": "Estructura"
+      }
+    },
+    "Pitta": {
+      "sun": {
+        "message": "Brinda soporte canaliza su liderazgo hacia el servicio. Evita el sol directo y la competencia; Surya activa su fuego al máximo.",
+        "keyword": "Liderazgo desde la calma"
+      },
+      "moon": {
+        "message": "Fluye con Chandra a través de actividades artísticas fluidas como pintura con agua. Mucha dulzura en el trato para enfriar la mente.",
+        "keyword": "Enfriar la mente"
+      },
+      "mars": {
+        "message": "Canaliza sin luchar: ofrece opciones de descarga física que no sean competitivas. Mangala y Pitta juntos piden canalización, no confrontación.",
+        "keyword": "Canalización"
+      },
+      "mercury": {
+        "message": "Aprovecha este momento para puzles o juegos de lógica. El desafío intelectual de Budha mantiene su mente aguda y ocupada.",
+        "keyword": "Desafío intelectual"
+      },
+      "jupiter": {
+        "message": "Fluye con Guru a través de momentos para compartir y ver el panorama general. Júpiter invita a la generosidad, no a la meta individual.",
+        "keyword": "Generosidad"
+      },
+      "venus": {
+        "message": "Aprovecha este momento para crear algo bello juntos. La armonía visual de Shukra baja su nivel de autoexigencia naturalmente.",
+        "keyword": "Disfrute estético"
+      },
+      "saturn": {
+        "message": "Brinda soporte mediante tareas manuales lentas que fomenten la paciencia. Shani enseña que no todo es \"ya\"; la espera es sabiduría.",
+        "keyword": "Humildad y espera"
+      }
+    },
+    "Kapha": {
+      "sun": {
+        "message": "Fluye con Surya a través de una caminata o juego activo al aire libre. El Sol es el motor ideal para sacarlos del letargo.",
+        "keyword": "Inspirar el movimiento"
+      },
+      "moon": {
+        "message": "Aprovecha la conexión emocional de Chandra sin caer en la inactividad. Fomenta el vínculo a través de una actividad suave pero en movimiento.",
+        "keyword": "Conexión sin pereza"
+      },
+      "mars": {
+        "message": "Aprovecha este momento para retos físicos que requieran fuerza y sudor. Mangala es el impulso necesario para encender su fuego interno.",
+        "keyword": "El impulso necesario"
+      },
+      "mercury": {
+        "message": "Fluye con Budha saliendo de la rutina con una conversación interesante o algo nuevo por aprender. La estimulación mental activa su energía.",
+        "keyword": "Estimulación mental"
+      },
+      "jupiter": {
+        "message": "Brinda soporte mediante una pequeña acción de gratitud activa. Evita que la comodidad de Guru se vuelva pereza; agradece haciendo.",
+        "keyword": "Gratitud activa"
+      },
+      "venus": {
+        "message": "Fluye con Shukra eligiendo la calidad sobre la cantidad. Evita el exceso de dulces; busca el goce en el arte y el refinamiento sensorial.",
+        "keyword": "Refinamiento"
+      },
+      "saturn": {
+        "message": "Aprovecha este momento para tareas del hogar con esfuerzo físico sostenido como ordenar o limpiar. La disciplina rítmica de Shani los activa sin prisa.",
+        "keyword": "Disciplina rítmica"
+      }
+    }
+  }
+}
