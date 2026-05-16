@@ -44,14 +44,14 @@ export function CurrentGraha({ currentHour, nextHour, msToNextHour, children }: 
         >
           <div className="flex items-center justify-between mb-1">
             <span
-              className="text-xs tracking-widest uppercase"
-              style={{ color: graha.color, opacity: 0.55, fontFamily: "'Lora', serif" }}
+              className="text-xs tracking-widest uppercase font-semibold"
+              style={{ color: graha.color, opacity: 0.85, fontFamily: "'Lora', serif" }}
             >
               {t('currentGraha.hourLabel', { index: currentHour.index, period: isNight ? t('currentGraha.night') : t('currentGraha.day') })}
             </span>
             <span
-              className="text-xs"
-              style={{ color: graha.color, opacity: 0.5, fontFamily: "'Lora', serif" }}
+              className="text-xs font-medium"
+              style={{ color: graha.color, opacity: 0.75, fontFamily: "'Lora', serif" }}
             >
               {t('currentGraha.until', { time: formatTime(currentHour.end) })}
             </span>
@@ -85,8 +85,8 @@ export function CurrentGraha({ currentHour, nextHour, msToNextHour, children }: 
                     {graha.name}
                   </h2>
                   <p
-                    className="text-sm"
-                    style={{ color: graha.color, opacity: 0.45, fontFamily: "'Lora', serif", letterSpacing: '0.05em' }}
+                    className="text-sm font-medium"
+                    style={{ color: graha.color, opacity: 0.8, fontFamily: "'Lora', serif", letterSpacing: '0.05em' }}
                   >
                     {graha.sanscrit} &mdash; {graha.planetName}
                   </p>
@@ -96,8 +96,8 @@ export function CurrentGraha({ currentHour, nextHour, msToNextHour, children }: 
 
             <div className="text-right flex-shrink-0 ml-4">
               <p
-                className="text-xs mb-1 uppercase tracking-widest"
-                style={{ color: graha.color, opacity: 0.45, fontFamily: "'Lora', serif" }}
+                className="text-xs mb-1 uppercase tracking-widest font-semibold"
+                style={{ color: graha.color, opacity: 0.85, fontFamily: "'Lora', serif" }}
               >
                 {t('currentGraha.nextChange')}
               </p>
@@ -140,7 +140,7 @@ export function CurrentGraha({ currentHour, nextHour, msToNextHour, children }: 
           >
             <p
               className="text-xs tracking-widest uppercase mb-3 flex items-center gap-1.5"
-              style={{ color: graha.color, opacity: 0.5, fontFamily: "'Lora', serif" }}
+              style={{ color: graha.color, opacity: 0.85, fontFamily: "'Lora', serif" }}
             >
               <span style={{ fontSize: '14px' }}>✦</span> {t('currentGraha.whatToDo')}
             </p>
@@ -161,7 +161,7 @@ export function CurrentGraha({ currentHour, nextHour, msToNextHour, children }: 
           <div className="px-6 py-5">
             <p
               className="text-xs tracking-widest uppercase mb-3 flex items-center gap-1.5"
-              style={{ color: graha.color, opacity: 0.5, fontFamily: "'Lora', serif" }}
+              style={{ color: graha.color, opacity: 0.85, fontFamily: "'Lora', serif" }}
             >
               <span style={{ fontSize: '14px' }}>✗</span> {t('currentGraha.avoid')}
             </p>
@@ -207,8 +207,8 @@ export function CurrentGraha({ currentHour, nextHour, msToNextHour, children }: 
           </span>
           <div className="flex-1 min-w-0">
             <p
-              className="text-xs tracking-widest uppercase mb-0.5"
-              style={{ color: nextGraha.color, opacity: 0.5, fontFamily: "'Lora', serif" }}
+              className="text-xs tracking-widest uppercase font-semibold mb-0.5"
+              style={{ color: nextGraha.color, opacity: 0.85, fontFamily: "'Lora', serif" }}
             >
               {t('currentGraha.comingUp', { time: formatTime(nextHour.start) })}
             </p>

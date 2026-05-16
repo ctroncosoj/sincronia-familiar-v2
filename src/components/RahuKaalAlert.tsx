@@ -108,8 +108,8 @@ export function RahuKaalAlert({ rahuKaal, active, msToEnd }: Props) {
         </p>
       </div>
       <p
-        className="text-xs text-right flex-shrink-0"
-        style={{ color: '#B0A080', fontFamily: "'Lora', serif", maxWidth: '120px' }}
+        className="text-xs text-right flex-shrink-0 font-medium"
+        style={{ color: '#44403c', fontFamily: "'Lora', serif", maxWidth: '120px' }}
       >
         {t('rahuKaal.avoidDecisions')}
       </p>

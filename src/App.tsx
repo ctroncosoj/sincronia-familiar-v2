@@ -13,6 +13,7 @@ import { FamilyProfile } from './components/FamilyProfile';
 import { DoshaConstitution } from './components/DoshaConstitution';
 import { DoshaGrahaBanner } from './components/DoshaGrahaBanner';
 import { SostenModal } from './components/SostenModal';
+import { BrujulaSincroniaDrawer } from './components/BrujulaSincroniaDrawer';
 import { GRAHAS } from './lib/grahas';
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
   const { children, addChild, removeChild, updateChildDosha, updateChildName } = useChildren();
   const [selectedChildId, setSelectedChildId] = useState<string | null>(null);
   const [sostenOpen, setSostenOpen] = useState(false);
+  const [brujulaOpen, setBrujulaOpen] = useState(false);
   const activeGrahaData = currentHour ? GRAHAS[currentHour.graha] : null;
 
   if (loading || latitude === null || longitude === null) {
@@ -56,7 +58,7 @@ export default function App() {
           paddingBottom: 'calc(4rem + env(safe-area-inset-bottom))',
         }}
       >
-        <Header sunTimes={sunTimes} now={now} lng={longitude} onSostenClick={() => setSostenOpen(true)} />
+        <Header sunTimes={sunTimes} now={now} lng={longitude} onSostenClick={() => setSostenOpen(true)} onBrujulaClick={() => setBrujulaOpen(true)} />
 
         <div className="space-y-4">
           {rahuKaal && (
@@ -98,6 +100,8 @@ export default function App() {
             <HoraTimeline planetaryHours={planetaryHours} now={now} currentHour={currentHour} />
           )}
         </div>
+
+        <BrujulaSincroniaDrawer open={brujulaOpen} onClose={() => setBrujulaOpen(false)} />
 
         {sostenOpen && (
           <SostenModal

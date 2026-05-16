@@ -13,14 +13,13 @@ interface Props {
 export function HoraTimeline({ planetaryHours, now, currentHour }: Props) {
   const { t } = useTranslation();
   const nowMs = now.getTime();
-  const currentIsNight = currentHour ? currentHour.index > 12 : false;
-  const [showNight, setShowNight] = useState(false);
+  const defaultIsNight = currentHour ? currentHour.index > 12 : false;
+  const [selectedPeriod, setSelectedPeriod] = useState<'day' | 'night'>(defaultIsNight ? 'night' : 'day');
 
   const dayHours = planetaryHours.filter((h) => h.index <= 12);
   const nightHours = planetaryHours.filter((h) => h.index > 12);
 
-  const activeTab = showNight || currentIsNight ? 'night' : 'day';
-  const displayHours = activeTab === 'night' ? nightHours : dayHours;
+  const displayHours = selectedPeriod === 'night' ? nightHours : dayHours;
 
   const renderHour = (h: PlanetaryHour) => {
     const graha = GRAHAS[h.graha];
@@ -48,9 +47,9 @@ export function HoraTimeline({ planetaryHours, now, currentHour }: Props) {
             <span
               className="text-sm"
               style={{
-                color: isCurrent ? graha.color : '#5A5040',
+                color: isCurrent ? graha.color : '#292524',
                 fontFamily: "'Lora', serif",
-                fontWeight: isCurrent ? 600 : 400,
+                fontWeight: isCurrent ? 600 : 500,
               }}
             >
               {graha.name}
@@ -72,7 +71,7 @@ export function HoraTimeline({ planetaryHours, now, currentHour }: Props) {
           {isCurrent && (
             <p
               className="text-xs mt-0.5 truncate"
-              style={{ color: graha.color, opacity: 0.6, fontFamily: "'Lora', serif" }}
+              style={{ color: graha.color, opacity: 0.75, fontFamily: "'Lora', serif", fontWeight: 500 }}
             >
               {graha.parentFocus}
             </p>
@@ -80,14 +79,14 @@ export function HoraTimeline({ planetaryHours, now, currentHour }: Props) {
         </div>
         <div className="flex flex-col items-end flex-shrink-0">
           <span
-            className="text-xs tabular-nums"
-            style={{ color: '#9A9080', fontFamily: "'Lora', serif" }}
+            className="text-xs tabular-nums font-medium"
+            style={{ color: '#44403c', fontFamily: "'Lora', serif" }}
           >
             {formatTime(h.start)}
           </span>
           <span
-            className="text-xs tabular-nums"
-            style={{ color: '#B8B0A0', fontFamily: "'Lora', serif", fontSize: '10px' }}
+            className="text-xs tabular-nums font-medium"
+            style={{ color: '#57534e', fontFamily: "'Lora', serif", fontSize: '10px' }}
           >
             {formatTime(h.end)}
           </span>
@@ -112,12 +111,12 @@ export function HoraTimeline({ planetaryHours, now, currentHour }: Props) {
           {(['day', 'night'] as const).map((tab) => (
             <button
               key={tab}
-              onClick={() => setShowNight(tab === 'night')}
+              onClick={() => setSelectedPeriod(tab)}
               className="px-4 py-1 text-xs transition-colors duration-200"
               style={{
                 fontFamily: "'Lora', serif",
-                backgroundColor: activeTab === tab ? '#4A5D23' : 'transparent',
-                color: activeTab === tab ? '#FFFFFF' : '#8A7A60',
+                backgroundColor: selectedPeriod === tab ? '#4A5D23' : 'transparent',
+                color: selectedPeriod === tab ? '#FFFFFF' : '#8A7A60',
                 cursor: 'pointer',
                 border: 'none',
                 outline: 'none',
