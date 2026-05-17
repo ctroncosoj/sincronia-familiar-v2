@@ -1,18 +1,17 @@
 {
   "id": "cl.sendaraiz.sincronia",
-  "name": "Sincronía Familiar — Senda Raíz",
+  "name": "Sincronía Familiar - Senda Raíz",
   "short_name": "Sincronía",
   "description": "Guía energética diaria según horas planetarias y Doshas Ayurvédicos para familias conscientes.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "any",
   "theme_color": "#4A5D23",
   "background_color": "#FCF9F2",
   "lang": "es",
-  "categories": ["lifestyle", "health", "parenting"],
+  "categories": ["lifestyle", "health"],
   "icons": [
     {
       "src": "/icon.svg",
@@ -51,6 +50,5 @@
       "purpose": "maskable"
     }
   ],
-  "screenshots": [],
   "prefer_related_applications": false
 }
